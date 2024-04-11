@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 13vh;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "swiper-icons";
+}

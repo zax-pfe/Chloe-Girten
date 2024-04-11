@@ -1,0 +1,93 @@
+.modal-phone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  /* border: 1px solid black; */
+  height: 30px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 3vh;
+}
+.page-content-phone {
+  margin: 10px 30px 30px 30px;
+}
+
+.main-container-phone {
+  display: flex;
+  align-items: center;
+  /* fill: 1; */
+  height: 60vh;
+  /* border: 1px solid black; */
+  padding-top: 5px;
+}
+
+.main-container-phone img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.closeBtn-phone {
+  cursor: pointer;
+  font-size: 22px;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  transition: border-color 0.3s;
+}
+
+.closeBtn-phone:hover {
+  border-color: #000;
+}
+
+.placeholder {
+  width: 5vw;
+}
+
+.thumbnail-container-phone {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 30px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #6b6b6b;
+}
+
+.description-container-phone {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 2vw;
+  margin-top: 5vh;
+}

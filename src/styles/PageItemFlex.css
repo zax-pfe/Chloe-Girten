@@ -1,0 +1,96 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.item {
+  display: flex;
+  background-color: #ffffff;
+  border: solid black;
+  border-radius: 10px;
+  width: 100vw;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-size: 32px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: border-color 0.3s;
+  /* background-color: aqua; */
+}
+
+.closeBtn:hover {
+  border-color: #000;
+}
+/* 
+Premier Item avec le bouton pour fermer  */
+.item:first-child {
+  justify-content: end;
+  /* align-items: center; */
+  height: 10vh;
+  /* padding-right: 1vw; */
+}
+
+Contient .item:nth-child(2) {
+  /* flex-grow: 5;  */
+  height: 70vh;
+}
+.item:nth-child(3) {
+  height: 20vh;
+  padding: 1vh 1vw 1vh;
+}
+
+.sub-item {
+  /* flex-grow: 1; */
+  display: flex;
+  border-radius: 10px;
+  border: solid rgb(0, 0, 0);
+  /* align-items: stretch; */
+  width: 24vw;
+}
+
+.sub-item:nth-child(2) {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.pictures-container {
+  border: solid rgb(33, 221, 16);
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.modal-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.modal-slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}

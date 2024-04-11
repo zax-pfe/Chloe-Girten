@@ -1,0 +1,12 @@
+.contact-container {
+  height: 70vh;
+  display: flex;
+  padding: 5vh 10vw;
+  box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item {
+  height: 100%;
+  width: 100%;
+  border: solid 1px black;
+}
