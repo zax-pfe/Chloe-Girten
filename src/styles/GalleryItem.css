@@ -21,8 +21,6 @@
   .grid-item-image {
     max-width: 90%;
     max-height: 90%;
-
-    animation-range-end: 400px;
   }
 }
 
@@ -30,6 +28,7 @@
   .grid-item {
     height: 500px;
     padding: 20px;
+    animation-range-end: 400px;
   }
   .grid-item-image {
     max-width: 80%;
