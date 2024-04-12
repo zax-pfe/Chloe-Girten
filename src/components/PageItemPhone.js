@@ -37,8 +37,10 @@ function PageItemPhone({
     setTimeout(() => setpageAnimation(""), 700);
   }
   useEffect(() => {
-    setMainImage(cover);
-  }, [activePage, cover]);
+    // reset the active thumbnail and the main image
+    setMainImage(thumbnail[0]);
+    setActiveThumbnail(0);
+  }, [activePage]);
 
   useEffect(() => {
     const scrollbarWidth =
