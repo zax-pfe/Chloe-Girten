@@ -15,6 +15,45 @@ function PageItemPhone({
   const [pageAnimation, setpageAnimation] = useState("");
   const [mainImage, setMainImage] = useState(cover);
   const [activeThumbnail, setActiveThumbnail] = useState(0);
+
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const minSwipeDistance = 50; // Minimum distance to be considered as swipe
+  const onTouchStart = (e) => {
+    setTouchEnd(null); // Reset touch end to null
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isSwipe = Math.abs(distance) > minSwipeDistance;
+    if (isSwipe) {
+      // Check if the swipe is right or left
+      distance < 0 ? moveNext() : movePrev();
+    }
+  };
+
+  const movePrev = () => {
+    if (activeThumbnail < thumbnail.length - 1) {
+      setActiveThumbnail(activeThumbnail + 1);
+    } else {
+      console.log("last thumbnail");
+    }
+  };
+
+  const moveNext = () => {
+    if (activeThumbnail > 0) {
+      setActiveThumbnail(activeThumbnail - 1);
+    } else {
+      console.log("Already at the first thumbnail");
+    }
+  };
+
   function handleClick({ index }) {
     setMainImage(thumbnail[index]);
     setActiveThumbnail(index);
@@ -86,7 +125,12 @@ function PageItemPhone({
             &#10005;
           </span>
         </div>
-        <div className="main-container-phone">
+        <div
+          className="main-container-phone"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           <img src={mainImage} alt="main" id="main-img-page1" />
         </div>
         <div className="thumbnail-container-phone">
