@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Chloe-Girten/static/css/main.ddf55bd3.css",
-    "main.js": "/Chloe-Girten/static/js/main.68a921c2.js",
+    "main.css": "/Chloe-Girten/static/css/main.7da463a8.css",
+    "main.js": "/Chloe-Girten/static/js/main.3cebb472.js",
     "static/js/453.0630e2a9.chunk.js": "/Chloe-Girten/static/js/453.0630e2a9.chunk.js",
     "static/media/tabouret_chien4.jpg": "/Chloe-Girten/static/media/tabouret_chien4.837ae9fd3cad3315ce34.jpg",
     "static/media/tabouret_chien2.jpg": "/Chloe-Girten/static/media/tabouret_chien2.60ec9b127320efaf3113.jpg",
@@ -29,12 +29,12 @@
     "static/media/bols3.jpg": "/Chloe-Girten/static/media/bols3.5815a25b164b5ea354a3.jpg",
     "static/media/hero.png": "/Chloe-Girten/static/media/hero.41acd801fff3755711b7.png",
     "index.html": "/Chloe-Girten/index.html",
-    "main.ddf55bd3.css.map": "/Chloe-Girten/static/css/main.ddf55bd3.css.map",
-    "main.68a921c2.js.map": "/Chloe-Girten/static/js/main.68a921c2.js.map",
+    "main.7da463a8.css.map": "/Chloe-Girten/static/css/main.7da463a8.css.map",
+    "main.3cebb472.js.map": "/Chloe-Girten/static/js/main.3cebb472.js.map",
     "453.0630e2a9.chunk.js.map": "/Chloe-Girten/static/js/453.0630e2a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddf55bd3.css",
-    "static/js/main.68a921c2.js"
+    "static/css/main.7da463a8.css",
+    "static/js/main.3cebb472.js"
   ]
 }
