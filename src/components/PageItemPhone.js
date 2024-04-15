@@ -40,6 +40,7 @@ function PageItemPhone({
 
   const movePrev = () => {
     if (activeThumbnail < thumbnail.length - 1) {
+      setMainImage(thumbnail[activeThumbnail + 1]);
       setActiveThumbnail(activeThumbnail + 1);
     } else {
       console.log("last thumbnail");
@@ -48,6 +49,7 @@ function PageItemPhone({
 
   const moveNext = () => {
     if (activeThumbnail > 0) {
+      setMainImage(thumbnail[activeThumbnail - 1]);
       setActiveThumbnail(activeThumbnail - 1);
     } else {
       console.log("Already at the first thumbnail");

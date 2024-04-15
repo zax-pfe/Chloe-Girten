@@ -40,6 +40,8 @@
 .arrow {
   height: 30px;
   border-radius: 50%;
+  padding: 20px;
+  box-sizing: border-box;
   border: 1px solid #ffffff;
   transition: border-color 0.3s;
 
@@ -55,7 +57,7 @@
 }
 
 .arrow:hover {
-  border: 1px solid #000000;
+  border: 1px solid #5c5c5c;
 }
 
 .bottom-container {
@@ -82,9 +84,9 @@
   width: 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: flex-start;
-  padding-left: 2vw;
+  padding-left: 3vw;
 }
 .thumbnail {
   height: 80%;
@@ -114,10 +116,11 @@
   border-radius: 50%;
   border: 1px solid #ffffff;
   transition: border-color 0.3s;
+  padding: 0 0 1px 0;
 }
 
 .closeBtn:hover {
-  border-color: #000;
+  border-color: #5c5c5c;
 }
 
 @keyframes slideUp {
